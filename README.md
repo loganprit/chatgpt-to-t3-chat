@@ -58,7 +58,7 @@ The converter:
 
 ## Note
 
-Theo is constantly updating T3 Chat, so this script might not work for very long.
+Theo is constantly updating T3 Chat, so this script might not work for very long. Also, the script does not support any attachments.
 
 ## Scripts
 
