@@ -56,9 +56,14 @@ The converter:
 3. Validates the converted data
 4. Outputs a compatible JSON file
 
-## Note
+## Notes
 
-Theo is constantly updating T3 Chat, so this script might not work for very long. Also, the script does not support any attachments.
+- Theo is constantly updating T3 Chat, so this script might not work for very long
+- The script does not support any attachments
+- The script currently ignores archived messages. If you wish to include them, comment out this line in `cleanConversations.ts`:
+  ```typescript
+  if (conversation.is_archived === true) return null;
+  ```
 
 ## Scripts
 

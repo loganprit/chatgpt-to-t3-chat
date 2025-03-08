@@ -44,6 +44,9 @@ const extractMessages = (mapping: any): Message[] => {
 
 // Clean each conversation
 const cleanConversation = (conversation: any) => {
+  // Skip archived conversations
+  if (conversation.is_archived === true) return null;
+
   const messages = extractMessages(conversation.mapping);
   
   // Skip conversations with no messages
