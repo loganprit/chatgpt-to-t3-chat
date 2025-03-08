@@ -1,0 +1,22 @@
+{
+  "name": "chatgpt-to-t3-chat",
+  "version": "1.0.0",
+  "description": "Convert ChatGPT chat exports to T3 chat format",
+  "main": "convert.ts",
+  "type": "module",
+  "scripts": {
+    "clean": "tsx cleanConversations.ts",
+    "convert": "tsx convert.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "tsx": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "compilerOptions": {
+    "module": "NodeNext"
+  }
+}
